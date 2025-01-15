@@ -1,0 +1,158 @@
+.card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.card {
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.close-btn:hover {
+  color: #00a8ff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.property {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #dddddd;
+  margin-bottom: 20px;
+}
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two boxes per row */
+  gap: 15px; /* Spacing between the boxes */
+  margin-bottom: 20px;
+}
+
+.feature-box {
+  background: #0f3460; /* Box background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  text-align: left; /* Align text to the left */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.feature-box:hover {
+  background: #1a5b87; /* Highlight color on hover */
+  transition: 0.3s ease-in-out;
+}
+
+.property {
+  display: flex;
+  flex-direction: column; /* Stack key above value */
+}
+
+.label {
+  font-size: 0.8rem;
+  color: #aaaaaa; /* Muted color for the label */
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* Bright color for the value */
+}
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-by {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.click-btn {
+  background-color: #00a8ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.click-btn:hover {
+  background-color: #007bbf;
+}
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.click-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.click-btn:hover {
+  background-color: #1558b3;
+  transition: 0.3s;
+}
