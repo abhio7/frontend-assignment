@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import apiFetch from "../../hooks/apiFetch"; // Import the custom hook
+import apiFetch from "../../Hooks/apiFetch"; // Import the custom hook
 import "./Card.css";
 
 const Card = ({ project, closeCard }) => {

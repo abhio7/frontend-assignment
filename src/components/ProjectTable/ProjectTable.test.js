@@ -56,10 +56,10 @@ describe("ProjectTable Component", () => {
   it("displays the correct data for each row, including handling missing 'amt.pledged' values", () => {
     renderTable(mockProjects);
 
-    // Get all the data rows (excluding the header)
+    // Get all the data rows 
     const rows = screen.getAllByRole("row").slice(1);
 
-    // Check the data in the first row (index 0 in this case since we're slicing)
+    // Check the data in the first row 
     const firstRowCells = rows[0].cells;
     expect(firstRowCells[0].textContent).toBe("1"); // S.No.
     expect(firstRowCells[1].textContent).toBe("75%"); // Percentage Funded
@@ -87,7 +87,7 @@ describe("ProjectTable Component", () => {
   it("calls onRowClick with the correct project when a row is clicked", () => {
     renderTable(mockProjects);
 
-    // Click on the first row (note: data rows start from index 1)
+    // Click on the first row 
     fireEvent.click(screen.getAllByRole("row")[1]);
 
     // Ensure that onRowClick is called with the first project
@@ -117,7 +117,6 @@ describe("ProjectTable Component", () => {
 
     const rows = screen.getAllByRole("row").slice(1); // Exclude header row
 
-    // Ensure that the serial number starts from 1 and increments by 1
     expect(rows[0].cells[0].textContent).toBe("1");  // First row should have "1"
     expect(rows[1].cells[0].textContent).toBe("2");  // Second row should have "2"
     expect(rows[2].cells[0].textContent).toBe("3");  // Third row should have "3"
