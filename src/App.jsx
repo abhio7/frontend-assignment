@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import apiFetch from "./hooks/apiFetch"; // custom hook for API call
+import apiFetch from "./Hooks/apiFetch"; // custom hook for API call
 import ProjectTable from "./components/ProjectTable/ProjectTable";
 import Pagination from "./components/Pagination/Pagination";
 import ProjectCard from "./components/Card/Card";
